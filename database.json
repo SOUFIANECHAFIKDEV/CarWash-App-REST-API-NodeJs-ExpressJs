@@ -1,0 +1,135 @@
+{
+    "étapes": [
+        {
+            "n°": 1,
+            "label": "Admin",
+            "description": ""
+        },
+        {
+            "n°": 2,
+            "label": "Payment ",
+            "description": ""
+        },
+        {
+            "n°": 3,
+            "label": "Client",
+            "description": ""
+        },
+        {
+            "n°": 4,
+            "label": "Section",
+            "description": ""
+        },
+        {
+            "n°": 5,
+            "label": "Employé",
+            "description": "cude + permissions to the sections"
+        },
+        {
+            "n°": 6,
+            "label": "Remises",
+            "description": ""
+        },
+        {
+            "n°": 7,
+            "label": "Facture",
+            "description": ""
+        },
+        {
+            "n°": 8,
+            "label": "Statistique",
+            "description": ""
+        },
+        {
+            "n°": 9,
+            "label": "Configuration",
+            "description": ""
+        }
+    ],
+    "tables": [
+        {
+            "n°": 1,
+            "name": "users",
+            "propriétés": ["name","phone_Number","email","emailIsActive","password","country","defaultLanguage","active","id_usersType"]
+        },
+        {
+            "n°": 2,
+            "name": "usersType",
+            "propriétés": ["name","reference"]
+        },
+        {
+            "n°": 3,
+            "name": "admins",
+            "propriétés": ["id_users"]
+        },
+        {
+            "n°": 4,
+            "name": "subscribe",
+            "propriétés": ["id_admin","id_subscribeTypes","date_start"]
+        },
+        {
+            "n°": 5,
+            "name": "subscribeTypes",
+            "propriétés": ["name","reference","number_dates"]
+        },
+        {
+            "n°": 6,
+            "name": "clients",
+            "propriétés": ["name","CellNumber","Customer'sBarcode","id_admin"]
+        },
+        {
+            "n°": 7,
+            "name": "customerVehicles",
+            "propriétés": ["TypeOfCar","Model","LicensePlateNumber","id_clients"]
+        },
+        {
+            "n°": 8,
+            "name": "employees",
+            "propriétés": ["name","id_admin","id_user"]
+        },
+        {
+            "n°": 9,
+            "name": "employeesRoles",
+            "propriétés": ["name","isActive","id_employees"]
+        },
+        {
+            "n°": 10,
+            "name": "sections",
+            "propriétés": ["name","isActive"]
+        },
+        {
+            "n°": 11,
+            "name": "sectionsType",
+            "propriétés": ["id_sections","name","price","isActive"]
+        },
+        {
+            "n°": 12,
+            "name": "billings",
+            "propriétés": ["date","id_sections","id_clients","id_employees","value","paymentType","registred"]
+        },
+        {
+            "n°": 13,
+            "name": "discounts",
+            "propriétés": ["id_clients","id_sections","date_starts","date_end","is_active","id_admin","value","typeValue"]
+        },
+        {
+            "n°": 14,
+            "name": "appSettings",
+            "propriétés": ["Logo","mainNameOfTheLaundry"]
+        },{
+            "n°": 15,
+            "name": "printing",
+            "propriétés": ["id_appSettings","id_clients","id_clientsVehicule","id_sections","message"]
+        }
+    ]
+}
+{
+    customer,
+    customerIsRegistered,
+    customerNotRegisteredInformations,
+    Vehicle,
+    paymentType,
+    sections: [
+        { section, subSection }
+    ]
+}

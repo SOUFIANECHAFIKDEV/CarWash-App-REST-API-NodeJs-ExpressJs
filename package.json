@@ -1,0 +1,31 @@
+{
+  "name": "application-for-management-of-car-wash.com",
+  "version": "1.0.0",
+  "description": "application pour la gestion des lavage de voiture",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://chafikSoufiane@bitbucket.org/chafikSoufiane/car-wash.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/chafikSoufiane/car-wash#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.0",
+    "config": "^1.29.4",
+    "express": "^4.16.3",
+    "express-async-errors": "^3.0.0",
+    "fawn": "^2.1.5",
+    "joi": "^13.1.0",
+    "joi-objectid": "^2.0.0",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.2.14",
+    "morgan": "^1.9.1",
+    "nodemailer": "^4.6.8",
+    "winston": "^2.4.0",
+    "winston-mongodb": "^3.0.0"
+  }
+}
